@@ -28,7 +28,8 @@ void Ball::newdir()
 
 bool Ball::hit(Paddle p)
 {
-	if ((this->x > p.x && this->x < p.x + p.width ) && (this->y > p.y && this->y < (p.y + p.length))) return true;
+	if ((this->x > p.x && this->x < p.x + p.width ) && 
+		(this->y > p.y && this->y < (p.y + p.length))) return true;
 	else return false;
 }
 
